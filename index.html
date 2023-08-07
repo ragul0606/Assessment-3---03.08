@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment 3 | 03.08</title>
+  </head>
+  <body>
+    <h1>Assessment 3 | 03.08</h1>
+
+    <script>
+      // Write a function called calculateRectanglePerimeter that takes the length and width of a rectangle as input and returns its perimeter
+      // let length = 1;
+      // let width = 2;
+      // function calculateRectanglePerimeter(length, width) {
+      //   return 2 * length + 2 * width;
+      // }
+      // console.log(calculateRectanglePerimeter(2, 8));
+
+      // Explain the differences between let, const, and var in terms of hoisting and block scope
+
+      // var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope. But while var variables are initialized with undefined , let and const variables are not initialized
+
+      // Use confirm to ask the user if they are 18 years or older. If they confirm, use prompt to ask for their email address. Display an alert thanking them if they provide their email or display an alert saying "You declined to provide your email" if they cancel
+
+      // let age = confirm("Are you 18 Years or older?");
+      // if (age) {
+      //   let email = prompt("Please enter your email address");
+      //   if (email) {
+      //     alert("Thank you for providing your email");
+      //   } else {
+      //     alert("You declined to provide your email");
+      //   }
+      // } else {
+      // }
+
+      // Write a function called calculateAgeDifference that takes two birth years as input using prompt. Convert them to numbers and calculate the age difference between the two years. Display the result using alert.
+
+      // function calculateAgeDifference() {
+      //   let yearOne = Number(prompt("Enter first year"));
+      //   let yearTwo = Number(prompt("Enter second year"));
+      //   let difference = Math.abs(yearOne - yearTwo);
+      //   alert(
+      //     "The age difference between the two years is " + difference + " years"
+      //   );
+      // }
+      // calculateAgeDifference();
+
+      // Write a function called calculatePercentage that takes a number and a percentage as input and returns the calculated percentage of the number. For example, calculatePercentage(100, 20) should return 20.
+
+      // function calculatePercentage(number, percentage) {
+      //   let result = number * (percentage / 100);
+      //   return result;
+      // }
+      // console.log(calculatePercentage(100, 20));
+
+      // Write a function called checkTriangleInequality that takes three side lengths of a triangle as input and returns true if they form a valid triangle (the sum of any two sides is greater than the third side), or false otherwise.
+
+      // function checkTriangleInequality(sideOne, sideTwo, sideThree) {
+      //   if (
+      //     sideOne + sideTwo > sideThree &&
+      //     sideOne + sideThree > sideTwo &&
+      //     sideTwo + sideThree > sideOne
+      //   ) {
+      //     return true;
+      //   } else {
+      //     return false;
+      //   }
+      // }
+      // console.log(checkTriangleInequality(2, 2, 2));
+      // console.log(checkTriangleInequality(10, 2, 4));
+
+      // Write a function called calculateTicketPrice that takes the age of a person and returns the ticket price based on the following rules:
+      // •	Children (age < 12) pay $5.
+      // •	Adults (age between 12 and 64, inclusive) pay $10.
+      // •	Seniors (age ≥ 65) pay $7.
+
+      // function calculateTicketPrice(age) {
+      //   let price;
+      //   if (age > 12) {
+      //     price = 5;
+      //   } else if (age >= 12 && age <= 64) {
+      //     price = 10;
+      //   } else if (age >= 65) {
+      //     price = 7;
+      //   }
+
+      //   return price;
+      // }
+
+      // console.log(calculateTicketPrice(12));
+      // console.log(calculateTicketPrice(27));
+      // console.log(calculateTicketPrice(55));
+      // console.log(calculateTicketPrice(70));
+
+      // Write a function called isBetweenRanges that takes a number as input and returns true if the number is between 10 and 20 (inclusive) or between 30 and 40 (inclusive), or false otherwise.
+
+      // function isBetweenRanges(number) {
+      //   let result;
+      //   if ((number >= 10 && number <= 20) || (number >= 30 && number <= 40)) {
+      //     result = true;
+      //   } else {
+      //     result = false;
+      //   }
+      //   return result;
+      // }
+
+      // console.log(isBetweenRanges(15));
+      // console.log(isBetweenRanges(25));
+
+      // Write a function called getFullName that takes a first name and a last name as input and returns the full name. If either the first name or the last name is missing (null or undefined), use the nullish coalescing operator to provide a default name "Unknown".
+
+      // function getFullName(firstName, lastName) {
+      //   firstName = firstName ?? "Unknown";
+      //   lastName = lastName ?? "Unknown";
+      //   return firstName + " " + lastName;
+      // }
+
+      // console.log(getFullName("John", "Doe"));
+      // console.log(getFullName("Ragul"));
+      // console.log(getFullName(null, "Ram"));
+
+      // Write a function called getPlanetGravity that takes a planet name as input and returns the gravity of that planet relative to Earth using a switch statement. You can assume valid input values are "Mercury", "Venus", "Mars", and "Jupiter".
+
+      // function getPlanetGravity(planet) {
+      //   let gravity;
+      //   switch (planet) {
+      //     case "Mercury":
+      //       gravity = 0.38;
+      //       break;
+      //     case "Venus":
+      //       gravity = 0.904;
+      //       break;
+      //     case "Mars":
+      //       gravity = "0.377";
+      //       break;
+      //     case "Jupiter":
+      //       gravity = 2.36;
+      //       break;
+      //   }
+      //   return gravity;
+      // }
+
+      // console.log(getPlanetGravity("Mercury"));
+      // console.log(getPlanetGravity("Venus"));
+      // console.log(getPlanetGravity("Mars"));
+      // console.log(getPlanetGravity("Jupiter"));
+      // console.log(getPlanetGravity("Earth"));
+
+      // Write a function expression called calculatePowerOfTwo that takes a positive integer as input and returns true if the number is a power of two, or false otherwise.
+
+      // let calculatePowerOfTwo = (number) => {
+      //   if (number > 0) {
+      //     while (number > 1 && Number.isInteger(number)) {
+      //       number = number / 2;
+      //     }
+      //     if (number === 1) {
+      //       result = true;
+      //     } else {
+      //       result = false;
+      //     }
+      //   } else {
+      //     result = "Invalid input";
+      //   }
+      //   return result;
+      // };
+
+      // console.log(calculatePowerOfTwo(8));
+      // console.log(calculatePowerOfTwo(10));
+      // console.log(calculatePowerOfTwo(16));
+    </script>
+  </body>
+</html>
